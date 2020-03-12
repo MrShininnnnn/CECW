@@ -3,8 +3,6 @@
 ## Introduction
 As the name suggests, the Colorful Extended Cleanup World (CECW) dataset is a color-extended version of the Cleanup World (CW) borrowed from the mobile-manipulation robot domain [(MacGlashan et al., 2015)](./reference/Grounding_English_Commands_to_Reward_Functions.pdf). CW refers to a world equipped with a movable object as well as four rooms in four colors, including "blue," "green," "red," and "yellow," which is designed as a simulation environment where the agent can act based on the instructions received [(Gopalan et al., 2018)](./reference/Sequence-to-Sequence_Language_Grounding_of_Non-Markovian_Task_Specifications.pdf). CW obeys a particular Geometric Linear Temporal Logic (GLTL) to parse commands by grammatical syntax, resulting in a total of 3382 commands reflecting 39 GLTL expressions. In addition, commands can be represented in textual expressions as shown in the table.
 
-<center>
-
 |                       Command                       | Textual Expression |
 |:----------------------------------------------------|:-------------------|
 |                  go to the red room                 | F R                |
@@ -14,9 +12,7 @@ As the name suggests, the Colorful Extended Cleanup World (CECW) dataset is a co
 | push the chair from the red room into the blue room | F & R F X          |
 | go to the red room move chair to the green room     | F & R F Z          |
 
-</center>
-
-The task in CW can be formatted as a supervised semantic parsing problem to translate commands (e.g., "go to the red room") to their textual expressions (e.g., "F R"). In this repository, we show how CECW is generated on the basis of CW in detail. I hope the publication of the CECW dataset can promote the research in related fields, as well as yours.
+The task in CW can be formatted as a supervised semantic parsing problem to translate commands (e.g., "go to the red room") to their textual expressions (e.g., "F R"). In this repository, we show how CECW is generated on the basis of CW in detail. Besides, we illustrate how to make use of CECW to study synonymous generalization. I hope the publication of the CECW dataset can promote the research in related fields, as well as yours.
 
 ## Directory
 + **CW** - the folder contains the original CW dataset
